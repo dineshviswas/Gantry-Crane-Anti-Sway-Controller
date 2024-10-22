@@ -2,7 +2,7 @@
 
 %Solve for the states
 t = 0:0.01:10;  % Time vector from 0 to 10 seconds, with 0.01s intervals
-f_input = 1*(t >= 1);  % Input force applied at t = 1 second, magnitude = 1N
+f_input = 1*(t>=0.5);  % Input force applied at t = 1 second, magnitude = 1N
 
 [y, t, x] = lsim(system_cl, f_input, t, x0); %x contains the state variables
 
